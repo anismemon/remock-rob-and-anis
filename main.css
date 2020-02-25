@@ -1,0 +1,56 @@
+/********footer styles *************/
+#footer{
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: lightgray;
+    max-width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footerFirstRow {
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+.footerSecondRow {
+    flex-direction: row;
+}
+#footerColumnOne{
+
+}
+#footerColumnTwo{
+
+}
+.formRowOne{
+    flex-direction:row;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.formRowOne input{
+    height: 30px;
+    box-shadow: 0px 4px 8px 0px gray;
+    border-radius: 5px;
+}
+.formRowTwo{
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.formRowTwo textarea{
+    min-width: 300px;
+    min-height: 150px;
+    box-shadow: 0px 4px 8px 0px gray;
+    border-radius: 5px;
+}
+button{
+    background-color: blue;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    font-size: .9rem;
+    border-radius: 7px;
+    border-style: none;
+    box-shadow: 0px 4px 8px 0px gray;
+}
+button:hover{
+    background-color: lightblue;
+}
