@@ -1,110 +1,102 @@
-/********footer styles *************/
-#footer{
-    margin: 0 auto;
-    background-color: rgb(236, 233, 233);
-    max-width: 90vw;
-    max-height: 600px;
-    font-family: Arial, Helvetica, sans-serif;
-} 
-.footerContainer{
-    max-width: 70%;
-    margin: 0 auto;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
+body{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 4fr, 1fr;
     grid-gap: 1rem;
     grid-template-areas:
-        "footerHeader footerHeader footerHeader footerHeader"
-        "footerForm footerForm footerInfo footerInfo"
-        "footerForm footerForm footerContact footerContact";
+    "header     header      header      header      header"
+    "tagline    tagline     tagline     tagline     tagline"
+    "features   features    features    features    features"       
+    "tell       tell        tell        tell        tell"
+    "banner     banner      banner      banner      banner"
+    "blankside1 main        main        sidebar     blankside2"    
+    "footer     footer      footer      footer      footer"
 }
-.footerHeader{
-    font-variant: small-caps;
-    text-align: center;
-    font-size: 1.4rem;
-    grid-area: footerHeader;
+
+#header{
+    grid-area: header;
+    padding: 0;
+    margin: 0;    
+    
 }
-.footerForm{
-    grid-area: footerForm;
+
+#tagline{
+    grid-area: tagline;
 }
-.footerInfo{
-    grid-area: footerInfo;
-    padding: 5px 10px;
-    text-align: justify;
+
+#tell-button{
+    grid-area: tell;
+}
+
+#banner{
+    grid-area: banner;
+
+}
+
+#main{
+    grid-area: main;
+}
+
+#sidebar{
+    grid-area: sidebar;
+}
+
+#blank-side1{
+    grid-area: blank-side1;
+}
+
+#blank-side2{
+    grid-area: blank-side2;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+#pagehome{
+    margin-top: 5px;
+    padding: 0;
+}
+
+
+#homepage{
+    font-size: 36px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#features{
+    grid-area: features;
     display: flex;
-    align-items: flex-start;
-}
-.footerContact{
-    grid-area: footerContact;
-    padding: 5px 10px;
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start;
+    padding-left: 300px;
+    padding-right: 300px;
 }
-.item {
+
+.centered{
     display: flex;
     justify-content: center;
+}
+
+#quote{
+   
+    height: 150px;
+    border: 1px solid black;
     align-items: center;
+    margin: 10px;
+    background-color: gray;
+    font-size: 24px;
 }
-.grayFont {
-    color: #a9a9a9;
+
+.boxed{
+    padding: 20px;
+    border-top-style: double;
 }
-.darkerGray {
-    color: #696969;
+
+#image-one, #image-two, #image-three{
+    text-align: center;
 }
-#footer
-.formRowOne{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-.formRowOne input{
-    height: 30px;
-    box-shadow: 0px 4px 8px 0px gray;
-    border-radius: 2px;
-    font-size: 1.2em;
-    border: none;
-    margin-right:10px;
-    margin-top: 5px;
-}
-.formRowTwo{
-    display:grid;
-    grid-template-columns: 1fr;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-.formRowTwo textarea{
-    min-width: 320px;
-    min-height: 150px;
-    margin-right: 5px;
-    box-shadow: 0px 4px 8px 0px gray;
-    border-radius: 2px;
-    border:none;
-    font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
-    resize:none;
-}
-button{
-    background-color: brown;
-    color: white;
-    padding: 10px 60px 10px 60px;
-    font-size: .9rem;
-    border-radius: 7px;
-    border-style: none;
-    box-shadow: 0px 4px 8px 0px gray;
-}
-button:hover{
-    background-color: lightblue;
-}
-#footer ul li{
-    list-style-type: none;
-    padding: 5px;
-}
-li span .left{
-    align-content: left;
-    float: left;
-}
-li span .right{
-    align-content: right;
-}
+    
