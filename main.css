@@ -1,0 +1,102 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 4fr, 1fr;
+    grid-gap: 1rem;
+    grid-template-areas:
+    "header     header      header      header      header"
+    "tagline    tagline     tagline     tagline     tagline"
+    "features   features    features    features    features"       
+    "tell       tell        tell        tell        tell"
+    "banner     banner      banner      banner      banner"
+    "blankside1 main        main        sidebar     blankside2"    
+    "footer     footer      footer      footer      footer"
+}
+
+#header{
+    grid-area: header;
+    padding: 0;
+    margin: 0;    
+    
+}
+
+#tagline{
+    grid-area: tagline;
+}
+
+#tell-button{
+    grid-area: tell;
+}
+
+#banner{
+    grid-area: banner;
+
+}
+
+#main{
+    grid-area: main;
+}
+
+#sidebar{
+    grid-area: sidebar;
+}
+
+#blank-side1{
+    grid-area: blank-side1;
+}
+
+#blank-side2{
+    grid-area: blank-side2;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+#pagehome{
+    margin-top: 5px;
+    padding: 0;
+}
+
+
+#homepage{
+    font-size: 36px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#features{
+    grid-area: features;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+}
+
+#quote{
+   
+    height: 150px;
+    border: 1px solid black;
+    align-items: center;
+    margin: 10px;
+    background-color: gray;
+    font-size: 24px;
+}
+
+.boxed{
+    padding: 20px;
+    border-top-style: double;
+}
+
+#image-one, #image-two, #image-three{
+    text-align: center;
+}
+    
