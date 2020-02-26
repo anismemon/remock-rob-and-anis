@@ -100,3 +100,113 @@ body{
     text-align: center;
 }
     
+/********footer styles *************/
+#footer{
+    margin: 0 auto;
+    background-color: rgb(236, 233, 233);
+    max-width: 90vw;
+    max-height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.footerContainer{
+    max-width: 70%;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "footerHeader footerHeader footerHeader footerHeader"
+        "footerForm footerForm footerInfo footerInfo"
+        "footerForm footerForm footerContact footerContact";
+}
+.footerHeader{
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 1.4rem;
+    grid-area: footerHeader;
+}
+.footerForm{
+    grid-area: footerForm;
+}
+.footerInfo{
+    grid-area: footerInfo;
+    padding: 5px 10px;
+    text-align: justify;
+    display: flex;
+    align-items: flex-start;
+}
+.footerContact{
+    grid-area: footerContact;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grayFont {
+    color: #a9a9a9;
+}
+.darkerGray {
+    color: #696969;
+}
+#footer
+.formRowOne{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.formRowOne input{
+    height: 30px;
+    box-shadow: 0px 4px 8px 0px gray;
+    border-radius: 2px;
+    font-size: 1.2em;
+    border: none;
+    margin-right:10px;
+    margin-top: 5px;
+}
+.formRowTwo{
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.formRowTwo textarea{
+    min-width: 320px;
+    min-height: 150px;
+    margin-right: 5px;
+    box-shadow: 0px 4px 8px 0px gray;
+    border-radius: 2px;
+    border:none;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    resize:none;
+}
+button{
+    background-color: brown;
+    color: white;
+    padding: 10px 60px 10px 60px;
+    font-size: .9rem;
+    border-radius: 7px;
+    border-style: none;
+    box-shadow: 0px 4px 8px 0px gray;
+}
+button:hover{
+    background-color: lightblue;
+}
+#footer ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+#footer ul li span .left{
+    align-content: left;
+    float: left;
+}
+#footer ul li span .right{
+    align-content: right;
+}
