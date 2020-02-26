@@ -1,51 +1,94 @@
 /********footer styles *************/
 #footer{
-    display:flex;
-    flex-direction: column;
     margin: 0 auto;
-    background-color: lightgray;
-    max-width: 90%;
+    background-color: rgb(236, 233, 233);
+    max-width: 90vw;
+    max-height: 600px;
     font-family: Arial, Helvetica, sans-serif;
-}
-.footerFirstRow {
-    padding: 10px 10px;
+} 
+.footerContainer{
+    max-width: 70%;
     margin: 0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "footerHeader footerHeader footerHeader footerHeader"
+        "footerForm footerForm footerInfo footerInfo"
+        "footerForm footerForm footerContact footerContact";
 }
-.footerSecondRow {
-    flex-direction: row;
+.footerHeader{
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 1.4rem;
+    grid-area: footerHeader;
 }
-#footerColumnOne{
-
+.footerForm{
+    grid-area: footerForm;
 }
-#footerColumnTwo{
-
+.footerInfo{
+    grid-area: footerInfo;
+    padding: 5px 10px;
+    text-align: justify;
+    display: flex;
+    align-items: flex-start;
 }
-.formRowOne{
-    flex-direction:row;
+.footerContact{
+    grid-area: footerContact;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.item {
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+.grayFont {
+    color: #a9a9a9;
+}
+.darkerGray {
+    color: #696969;
+}
+#footer
+.formRowOne{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     padding: 5px;
     margin-bottom: 10px;
 }
 .formRowOne input{
     height: 30px;
     box-shadow: 0px 4px 8px 0px gray;
-    border-radius: 5px;
+    border-radius: 2px;
+    font-size: 1.2em;
+    border: none;
+    margin-right:10px;
+    margin-top: 5px;
 }
 .formRowTwo{
-    justify-content: center;
+    display:grid;
+    grid-template-columns: 1fr;
     padding: 5px;
     margin-bottom: 10px;
 }
 .formRowTwo textarea{
-    min-width: 300px;
+    min-width: 320px;
     min-height: 150px;
+    margin-right: 5px;
     box-shadow: 0px 4px 8px 0px gray;
-    border-radius: 5px;
+    border-radius: 2px;
+    border:none;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    resize:none;
 }
 button{
-    background-color: blue;
+    background-color: brown;
     color: white;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 60px 10px 60px;
     font-size: .9rem;
     border-radius: 7px;
     border-style: none;
@@ -53,4 +96,15 @@ button{
 }
 button:hover{
     background-color: lightblue;
+}
+#footer ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+li span .left{
+    align-content: left;
+    float: left;
+}
+li span .right{
+    align-content: right;
 }
