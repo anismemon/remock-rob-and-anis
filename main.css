@@ -99,7 +99,24 @@ body{
 #image-one, #image-two, #image-three{
     text-align: center;
 }
-    
+button{
+    background-color: brown;
+    color: white;
+    padding: 10px 60px 10px 60px;
+    font-size: .9rem;
+    border-radius: 7px;
+    border-style: none;
+    box-shadow: 0px 4px 8px 0px gray;
+}
+button:hover{
+    background-color: lightblue;
+}
+.grayFont {
+    color: #a9a9a9;
+}
+.darkerGray {
+    color: #696969;
+}
 /********footer styles *************/
 #footer{
     margin: 0 auto;
@@ -120,6 +137,7 @@ body{
         "footerForm footerForm footerInfo footerInfo"
         "footerForm footerForm footerContact footerContact";
 }
+
 .footerHeader{
     font-variant: small-caps;
     text-align: center;
@@ -140,19 +158,12 @@ body{
     grid-area: footerContact;
     padding: 5px 10px;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-direction: row;
 }
 .item {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.grayFont {
-    color: #a9a9a9;
-}
-.darkerGray {
-    color: #696969;
 }
 #footer
 .formRowOne{
@@ -179,34 +190,23 @@ body{
 .formRowTwo textarea{
     min-width: 320px;
     min-height: 150px;
-    margin-right: 5px;
+    margin-right: 10px;
     box-shadow: 0px 4px 8px 0px gray;
     border-radius: 2px;
     border:none;
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
-    resize:none;
 }
-button{
-    background-color: brown;
-    color: white;
-    padding: 10px 60px 10px 60px;
-    font-size: .9rem;
-    border-radius: 7px;
-    border-style: none;
-    box-shadow: 0px 4px 8px 0px gray;
-}
-button:hover{
-    background-color: lightblue;
-}
-#footer ul li{
+.footerContact ul{
     list-style-type: none;
+}
+.footerContact ul li{
     padding: 5px;
+    margin-bottom: 5px;
 }
-#footer ul li span .left{
-    align-content: left;
-    float: left;
+li i {
+    margin-right: 5px;
 }
-#footer ul li span .right{
-    align-content: right;
-}
+
+
+/********blog-post styles **********************/
