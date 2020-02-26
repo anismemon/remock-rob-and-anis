@@ -82,13 +82,12 @@ body{
 }
 
 #quote{
-   
-    height: 150px;
-    border: 1px solid black;
     align-items: center;
     margin: 10px;
-    background-color: gray;
-    font-size: 24px;
+    font-size: 2.2rem;
+    color: white;
+    padding: 5px;
+    align-items: center;
 }
 
 .boxed{
@@ -180,6 +179,7 @@ button:hover{
     border: none;
     margin-right:10px;
     margin-top: 5px;
+    width: 95%;
 }
 .formRowTwo{
     display:grid;
@@ -190,6 +190,7 @@ button:hover{
 .formRowTwo textarea{
     min-width: 320px;
     min-height: 150px;
+    width: 95%;
     margin-right: 10px;
     box-shadow: 0px 4px 8px 0px gray;
     border-radius: 2px;
@@ -210,3 +211,36 @@ li i {
 
 
 /********blog-post styles **********************/
+img{
+    width: 100%;
+    box-shadow: 0px 2px 4px 0px gray;
+}
+.article-img{
+
+}
+.caption {
+    font-size: .95rem;
+    margin-top: 1rem;
+}
+.article-title h2{
+    font-variant: small-caps;
+}
+.article-body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.banner {
+    /* The image used */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Cow_on_Pupers.jpg");
+  
+    /* Set a specific height */
+    height: 200px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
