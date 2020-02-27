@@ -117,8 +117,10 @@ body{
     margin-top: 5px;
     padding: 0;
 }
-
-
+img{
+    width: 100%;
+    box-shadow: 0px 2px 4px 0px gray;
+}
 #homepage{
     font-size: 36px;
     padding-top: 20px;
@@ -140,8 +142,7 @@ body{
     justify-content: center;
 }
 
-#quote{
-   
+#quote{ 
     height: 150px;
     border: 1px solid black;
     align-items: center;
@@ -214,8 +215,7 @@ body{
 .darkerGray {
     color: #696969;
 }
-#footer
-.formRowOne{
+#footer .formRowOne{
     display:grid;
     grid-template-columns: 1fr 1fr;
     padding: 5px;
@@ -229,6 +229,7 @@ body{
     border: none;
     margin-right:10px;
     margin-top: 5px;
+    width: 95%;
 }
 .formRowTwo{
     display:grid;
@@ -239,13 +240,13 @@ body{
 .formRowTwo textarea{
     min-width: 320px;
     min-height: 150px;
-    margin-right: 5px;
+    width: 95%;
+    margin-right: 10px;
     box-shadow: 0px 4px 8px 0px gray;
     border-radius: 2px;
     border:none;
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
-    resize:none;
 }
 button{
     background-color: brown;
@@ -289,3 +290,32 @@ button:hover{
 #footer ul{
     padding: 5px;
 }
+/******Blog post styles ************************/
+
+.caption {
+    font-size: .95rem;
+    margin-top: 1rem;
+    font-variant: small-caps;
+}
+.article-title h2{
+    font-variant: small-caps;
+}
+.article-body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.banner {
+    /* The image used */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e2/Parque_nacional_y_reserva_Denali%2C_Alaska%2C_Estados_Unidos%2C_2017-08-30%2C_DD_72.jpg");
+  
+    /* Set a specific height */
+    height: 200px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
