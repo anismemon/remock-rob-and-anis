@@ -128,7 +128,7 @@ button:hover{
     max-width: 70%;
     margin: 0 auto;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-d columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
     grid-gap: 1rem;
     grid-template-areas:
