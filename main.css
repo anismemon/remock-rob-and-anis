@@ -91,11 +91,7 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-/* #tagline{
-    border-top: groove;
-    height: 2px;
-    border-bottom: groove;
-} */
+
 
 #sidebar{
     grid-area: sidebar;
@@ -250,7 +246,7 @@ body{
 button{
     background-color: brown;
     color: white;
-    padding: 10px 60px 10px 60px;
+    padding: 10px 30px 10px 30px;
     font-size: .9rem;
     border-radius: 7px;
     border-style: none;
@@ -263,10 +259,6 @@ button:hover{
     list-style-type: none;
     padding: 5px;
 }
-/* #footer ul li span .left{
-    align-content: left;
-    float: left;
-} */
 
 
 #listFormat{
