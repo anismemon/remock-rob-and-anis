@@ -4,17 +4,26 @@ body{
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 6fr 2fr;
+    grid-template-rows: 1fr 2fr;
     grid-gap: 1rem;
     grid-template-areas:
     "header     header      header      header      header"
     "second-header   second-header second-header     second-header     second-header"
-    /* "features   features    features    features    features"       
+   /* "features   features    features    features    features"       
     "tell       tell        tell        tell        tell" */
     "banner     banner      banner      banner      banner"
     "blankleft main        main        sidebar     blankright"    
     "footer     footer      footer      footer      footer"
 }
+/*body .blog-post{
+    grid-template-areas:
+    "header    header      header"
+    "second-header second-header second-header"
+    "features features features"       
+    "banner banner banner"
+    "main main main"
+    "footer footer footer";
+}**/
 
 #header{
     grid-area: header;
@@ -23,17 +32,31 @@ body{
 }
 
 #second-header{
-    grid-area: second-header;
+    grid-area: second-header;   
+}
+#features{
+    grid-area: features;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 300px;
+    padding-right: 300px;
     
 }
 
-#tell-button{
+.tell-button{
     grid-area: tell;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
-
-#banner{
+.banner {
     grid-area: banner;
-
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e2/Parque_nacional_y_reserva_Denali%2C_Alaska%2C_Estados_Unidos%2C_2017-08-30%2C_DD_72.jpg");
+    height: 150px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #main{
@@ -87,9 +110,9 @@ body{
     width: 4em;
 
 }
-#tagline{
-    padding-top: 20px;
-    padding-bottom: 20px;
+.tagline{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 /* #tagline{
     border-top: groove;
@@ -127,16 +150,6 @@ img{
     margin: 0;
 }
 
-#features{
-    grid-area: features;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 300px;
-    padding-right: 300px;
-    
-}
-
 .centered{
     display: flex;
     justify-content: center;
@@ -144,11 +157,12 @@ img{
 
 #quote{ 
     height: 150px;
-    border: 1px solid black;
-    align-items: center;
+    border: none;
+    text-align: center;
     margin: 10px;
-    background-color: gray;
-    font-size: 24px;
+    color: white;
+    text-shadow: 1px 1px lightgrey;
+    font-size: 1.9rem;
 }
 
 .boxed{
@@ -158,6 +172,7 @@ img{
 
 #image-one, #image-two, #image-three{
     text-align: center;
+    margin-right: 30px;
 }
     
 /********footer styles *************/
@@ -297,7 +312,7 @@ button:hover{
     margin-top: 1rem;
     font-variant: small-caps;
 }
-.article-title h2{
+.article-title{
     font-variant: small-caps;
 }
 .article-body{
@@ -306,16 +321,4 @@ button:hover{
     text-align: justify;
 }
 
-.banner {
-    /* The image used */
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e2/Parque_nacional_y_reserva_Denali%2C_Alaska%2C_Estados_Unidos%2C_2017-08-30%2C_DD_72.jpg");
-  
-    /* Set a specific height */
-    height: 200px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+
