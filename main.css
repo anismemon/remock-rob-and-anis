@@ -40,6 +40,9 @@ body{
     padding-bottom: 10px;
     padding-left: 20px;
 }
+.blog-main{
+    grid-area: main;
+}
 #first-article, #second-article{
     padding: 0 30px 30px 30px;
     margin-bottom: 5px;
@@ -47,6 +50,14 @@ body{
 
 .title{
     padding-bottom: 20px;
+}
+.double-line-blog {
+    margin-top: 1.2rem;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    height: 3px;
+    grid-column-start: 2;
+    grid-column-end: 5;
 }
 
 .special-line-double{    
@@ -141,7 +152,11 @@ img{
     width: 100%;
     border: 2px solid lightgray;  
 }
-
+#blogpage {
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+    margin: 0;
+}
 #homepage{
     font-size: 36px;
     padding-top: 20px;
@@ -157,12 +172,23 @@ img{
     padding-right: 300px;
     
 }
-
 .centered{
     display: flex;
     justify-content: center;
 }
-
+.centered2{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+#blog-header {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+#blog-header-two {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
 .max{
     max-width: 85%;    
 }
@@ -173,11 +199,7 @@ img{
     margin-bottom: 60px;
 }
 
-.centered2{
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-}
+
 #quote{ 
     height: 180px;
     color: white;
