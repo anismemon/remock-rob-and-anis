@@ -161,11 +161,11 @@ img{
     padding-top: 1.5rem;
     margin: 0;
 }
-#homepage{
-    font-size: 36px;
+.title{
+    font-size: 46px;
     padding-top: 20px;
     margin: 0;
-    font-family: 'Arvo&display=swap'; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     color: tomato; 
     font-style: bold
 }
@@ -206,27 +206,24 @@ img{
     margin-bottom: 60px;
 }
 
-
+#buttonCenter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 5px; 
+}
 #quote{ 
     height: 180px;
-    color: white;
-    /* outline: 1px solid lightgrey;
-    outline-offset: 2px; */
+    color: white;    
     align-items: center;
     margin-left: 20px;
-    margin-bottom: 30px;
-    
-    /* background-color: grey; */
+    margin-bottom: 30px;    
     background: linear-gradient(90deg, gray, lightgray, gray); 
     font-size: 24px;
     position: relative;
     
 }
 
-/* #smallish-picture{
-    max-width: 30%;
-    max-height: 30%;
-} */
 .offset{
     padding-bottom: 2px;
   
@@ -235,21 +232,7 @@ img{
   box-shadow: 2px 0 3px  0 lightgrey;
   
 }
-/* #quote:before {
-    content: '';
-    border-top: 3px red;
-    width: 100%;
-    position: absolute;
-    top: 0px;    
-  } */
 
-  /* #quote:before {
-    content: '';
-    border-top: 3px solid white;
-    width: 100%;
-    position: absolute;
-    top: 3.5px;
-  } */
 .boxed{
     padding: 20px;
     border-top-style: double;
