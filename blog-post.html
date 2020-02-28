@@ -8,7 +8,11 @@
   <link rel="stylesheet" href="main.css" />
 </head>
 
-<body> 
+<body style="grid-template-rows: 1fr 1fr auto 2fr; grid-template-columns:1fr 2fr 2fr 2fr 1fr; grid-template-areas: 
+'header     header      header      header      header' 
+'second-header   second-header second-header     second-header     second-header'    
+'blankleft main        main        main    blankright'    
+'footer     footer      footer      footer      footer'"> 
   <section id="blog-header" class="centered2 centered">
     <h1 id="blogpage">BLOG POST</h1>
     <p id="pagehome">It shall be good and plenty</p>
@@ -86,20 +90,21 @@
         <div class="formRowTwo">
           <textarea name="feedback" id="feedback" placeholder="&nbsp;Message"></textarea>
         </div>
-        <button><i class="far fa-envelope"></i> Submit</button>    
+        <button class="redButton"><i class="far fa-envelope"></i> Submit</button>    
     </div>
     <div class="item footerInfo darkerGray">I'm baby selfies actually godard disrupt af cloud bread skateboard swag vice. Blog mustache 3 wolf moon leggings, sriracha austin iceland deep v typewriter edison bulb banjo. Flexitarian vinyl organic chia pok pok fam palo santo banh mi pop-up jean shorts leggings single-origin coffee synth. Tbh kinfolk biodiesel affogato raclette roof party beard pork belly, chicharrones four loko taxidermy next level master cleanse knausgaard letterpress. </div>
     <div class="footerContact">
-        <ul>
-          <li><i class="fas fa-home"></i></span>The Burlington Code Academy <br/><span class="secondLine">182 Main Street <br/>Burlington, VT 05701<span></span></li>
-          <li><i class="fas fa-phone"></i>802.773.1813</li>
-          <li><i class="far fa-envelope"></i>info[at]burlingtoncodeacademy.com</li>
-        </ul>
       <ul>
-        <li><i class="fab fa-facebook-square"></i>Facebook</li> 
-        <li><i class="fab fa-twitter-square"></i>Twitter</li> 
-        <li><i class="fab fa-linkedin"></i>Linkedin</li> 
-        <li><i class="fab fa-instagram"></i>Facebook</li> 
+        <li id='listFormat'><p class="left"><i class="fas fa-home"></i></p><p class="right">The Burlington Code Academy
+            <br />182 Main Street <br />Burlington, VT 05701</p></li>
+        <li><i class="fas fa-phone"></i> phone</li>
+        <li><i class="far fa-envelope"></i> email</li>
+      </ul>
+      <ul>
+        <li><i class="fab fa-facebook-square"></i> facebook</li>
+        <li><i class="fab fa-twitter-square"></i> twitter</li>
+        <li><i class="fab fa-dribbble"></i> dribble</li>
+        <li><i class="fab fa-instagram"></i> instagram</li>
       </ul>
     </div>
   </div>
