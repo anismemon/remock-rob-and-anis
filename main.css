@@ -48,8 +48,12 @@ body{
     margin-bottom: 5px;
 }
 
-.title{
+.titleLarge{
     padding-bottom: 20px;
+    font-size: 20px;
+}
+.titleSmall{
+    padding-bottom: 20px;    
 }
 .double-line-blog {
     margin-top: 1.2rem;
@@ -69,7 +73,7 @@ body{
 }
 
 .special-line-double2{    
-    margin-bottom: 35px;
+    margin-top: 50px;
     border-top: 1px solid lightgrey;
     height: 3px;
     border-bottom: 1px solid lightgrey;  
@@ -100,7 +104,7 @@ body{
     padding-left: 10px;
 }
 .redButton{
-    background-color: sienna;
+    background-color: tomato;
     color: white;
     padding: 10px 30px 10px 30px;
     font-size: .9rem;
@@ -161,6 +165,9 @@ img{
     font-size: 36px;
     padding-top: 20px;
     margin: 0;
+    font-family: 'Arvo&display=swap'; 
+    color: tomato; 
+    font-style: bold
 }
 
 #features{
