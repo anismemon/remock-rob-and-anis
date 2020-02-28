@@ -45,8 +45,12 @@ body{
     margin-bottom: 5px;
 }
 
-.title{
+.titleLarge{
     padding-bottom: 20px;
+    font-size: 20px;
+}
+.titleSmall{
+    padding-bottom: 20px;    
 }
 
 .special-line-double{    
@@ -58,7 +62,7 @@ body{
 }
 
 .special-line-double2{    
-    margin-bottom: 35px;
+    margin-top: 50px;
     border-top: 1px solid lightgrey;
     height: 3px;
     border-bottom: 1px solid lightgrey;  
@@ -89,7 +93,7 @@ body{
     padding-left: 10px;
 }
 .redButton{
-    background-color: sienna;
+    background-color: tomato;
     color: white;
     padding: 10px 30px 10px 30px;
     font-size: .9rem;
@@ -146,6 +150,9 @@ img{
     font-size: 36px;
     padding-top: 20px;
     margin: 0;
+    font-family: 'Arvo&display=swap'; 
+    color: tomato; 
+    font-style: bold
 }
 
 #features{
@@ -374,3 +381,19 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  /*************** Continue Reading page ****************/
+
+  /* nav{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 8fr 2fr;
+    grid-gap: 1rem;
+    grid-template-areas:
+    "header     header      header      header      header"    
+    "blankleft main        main        sidebar     blankright"    
+    "footer     footer      footer      footer      footer"
+} */
