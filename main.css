@@ -4,51 +4,169 @@ body{
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 8fr 3fr;
+    grid-template-rows: auto auto auto auto auto;
     grid-gap: 1rem;
     grid-template-areas:
     "header     header      header      header      header"
-    "second-header   second-header second-header     second-header     second-header"    
+    ".   second-header second-header     second-header     ."    
     "banner     banner      banner      banner      banner"
     "blankleft main        main        sidebar     blankright"    
     "footer     footer      footer      footer      footer"
 }
 
+/***** main content areas *****/
+
 #header{    
     grid-area: header;
-    padding: 0;
+    padding-top: 20px;
     margin: 0;
     grid-column-start: 2;
     grid-column-end: 5;        
 }
 
 #second-header{
-    grid-area: second-header;
-    
-}
-
-#tell-button{
-    grid-area: tell;
+    grid-area: second-header;    
 }
 
 #banner{
     grid-area: banner;
-
 }
 
 #main{
     grid-area: main;    
     padding-right: 20px;
     padding-bottom: 10px;
-    padding-left: 20px;
-}
+   }
+
 .blog-main{
     grid-area: main;
 }
+
 #first-article, #second-article{
-    padding: 0 30px 30px 30px;
+    padding: 0 30px 30px 0;
     margin-bottom: 5px;
+    text-align: justify;
 }
+
+#sidebar{
+    grid-area: sidebar;
+}
+
+.text{
+    text-align: justify;
+    font-size: 14px;
+}
+
+/***** small content areas *****/
+
+.learn-more{
+    margin-bottom: 10px;
+}
+
+#tagline{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.banner {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e2/Parque_nacional_y_reserva_Denali%2C_Alaska%2C_Estados_Unidos%2C_2017-08-30%2C_DD_72.jpg");
+    height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 0 3px  0 lightgrey;
+    align-items: center;
+    margin: 30px 0 30px 0;
+  }
+
+.quote{     
+    height: 2rem;
+    font-size: 1.8rem;
+    color: white;
+    align-items: center;
+    text-align: center;
+    }
+
+#image-one, #image-two, #image-three{
+    text-align: center;
+}
+
+#pagehome{
+    margin-top: 5px;    
+}
+img{
+    width: 100%;
+    border: 2px solid lightgray;  
+}
+#blogpage {
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+    margin: 0;
+}
+
+#features{
+    grid-area: features;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+.sidetext{
+    margin-bottom: 50px;
+}
+
+/***** side filler  *****/
+
+#blank-side-left{
+    grid-area: blankleft;
+}
+
+#blank-side-right{ 
+    grid-area: blankright;
+}
+
+#blank-side-left, #blank-side-right{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.adSpace{
+    display: none;
+}
+
+.adSpace:hover{
+    display: block;
+}
+/***** buttons *****/
+
+.redButton{
+    background-color: tomato;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    font-size: .9rem;
+    border-radius: 4px;
+    border-style: none;
+    box-shadow: 0px 4px 8px 0px gray;
+}
+.redButton:hover{
+    background-color: lightblue;
+}
+.date{
+    margin-top: 10px;
+    color: white;
+    text-align: center;    
+    background-color: gray;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;    
+    box-shadow: 0px 4px 8px 0px lightgray;
+
+}
+.date:hover{
+    background-color: rgb(74, 172, 74);
+}
+
+/***** titles *****/
 
 .titleLarge{
     padding-bottom: 20px;
@@ -57,6 +175,18 @@ body{
 .titleSmall{
     padding-bottom: 20px;    
 }
+
+.title{
+    font-size: 46px;
+    padding-top: 20px;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: tomato; 
+    font-style: bold
+}
+
+/***** special divider lines *****/
+
 .double-line-blog {
     margin-top: 1.2rem;
     border-top: 1px solid lightgray;
@@ -70,8 +200,7 @@ body{
     margin-top: 35px;
     border-top: 1px solid lightgrey;
     height: 3px;
-    border-bottom: 1px solid lightgrey;  
-          
+    border-bottom: 1px solid lightgrey;            
 }
 
 .special-line-double2{    
@@ -88,117 +217,9 @@ body{
     border-bottom: 1.5px solid lightgray;
 }
 
-.wrap{
-    float: left;
-    margin-right: 15px;
-    max-width: 30%;
-    max-height: 30%;
-}
-.sidetext{
-    margin-bottom: 50px;
-}
+/***** various other parameters *****/
 
-#learn-more{
-    margin-bottom: 10px;
-}
-#blank-side-left, #blank-side-right{
-    padding-right: 10px;
-    padding-left: 10px;
-}
-.redButton{
-    background-color: tomato;
-    color: white;
-    padding: 10px 30px 10px 30px;
-    font-size: .9rem;
-    border-radius: 7px;
-    border-style: none;
-    box-shadow: 0px 4px 8px 0px gray;
-}
-.redButton:hover{
-    background-color: lightblue;
-}
-.date{
-    margin-top: 10px;
-    color: white;
-    text-align: center;    
-    background-color: gray;
-    padding: 8px 16px 8px 16px;
-    border-radius: 7px;    
-    box-shadow: 0px 4px 8px 0px lightgray;
-
-}
-.date:hover{
-    background-color: lightgreen;
-}
-#tagline{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#sidebar{
-    grid-area: sidebar;
-}
-
-#blank-side-left{
-    grid-area: blank-side-left;
-}
-
-#blank-side-right{
-    grid-area: blank-side-right;
-}
-
-#footer{
-    grid-area: footer;
-}
-
-#pagehome{
-    margin-top: 5px;    
-}
-img{
-    width: 100%;
-    border: 2px solid lightgray;  
-}
-#blogpage {
-    font-size: 2.5rem;
-    padding-top: 1.5rem;
-    margin: 0;
-}
-.title{
-    font-size: 46px;
-    padding-top: 20px;
-    margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    color: tomato; 
-    font-style: bold
-}
-
-#features{
-    grid-area: features;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 300px;
-    padding-right: 300px;
-    
-}
-.centered{
-    display: flex;
-    justify-content: center;
-}
-.centered2{
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-}
-#blog-header {
-    grid-column-start: 2;
-    grid-column-end: 5;
-}
-#blog-header-two {
-    grid-column-start: 2;
-    grid-column-end: 5;
-}
-.max{
+.max{ 
     max-width: 85%;    
 }
 .spaced{
@@ -208,28 +229,25 @@ img{
     margin-bottom: 60px;
 }
 
-.banner {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e2/Parque_nacional_y_reserva_Denali%2C_Alaska%2C_Estados_Unidos%2C_2017-08-30%2C_DD_72.jpg");
-    height: 200px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 2px 0 3px  0 lightgrey;
+.centered{
+    display: flex;
+    justify-content: center;
+}
+.centered2{
+    display: flex;
     align-items: center;
-  }
+    flex-direction: column; 
+}
+.headerWidth {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
 
-.quote{ 
-    height: 2rem;
-    font-size: 1.8rem;
-    color: white;
-    align-items: center;
-    text-align: center;
-    /* deprecated
-     background-color: grey; 
-    background: linear-gradient(90deg, gray, lightgray, gray); 
-    font-size: 24px;
-    position: relative;*/
+.wrap{
+    float: left;
+    margin-right: 15px;
+    max-width: 30%;
+    max-height: 30%;
 }
 
 .offset{
@@ -241,13 +259,11 @@ img{
     padding: 20px;
     border-top-style: double;
 }
+  
+/************* footer styles *************/
 
-#image-one, #image-two, #image-three{
-    text-align: center;
-}
-    
-/********footer styles *************/
 #footer{
+    grid-area: footer;
     margin: 0 auto;
     background-color: rgb(236, 233, 233);
     max-width: 90vw;
@@ -361,7 +377,7 @@ img{
 #footer ul{
     padding: 5px;
 }
-/******Blog post styles ************************/
+/************************ Blog post styles ************************/
 
 .caption {
     font-size: .95rem;
@@ -377,4 +393,10 @@ img{
 }
 .article-body{
     text-align: justify;
+}
+
+/*********** learn more styles *********/
+
+#first-article-learn{
+    padding-left: 30px;
 }

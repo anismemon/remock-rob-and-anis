@@ -5,17 +5,15 @@
   <title>Mockup Home</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="main.css" />
-  <!-- <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="main.css" />  
 </head>
 
 <body>
   <section id="header" class='centered2 centered'>
     <h1 id="homepage" class='title'>HOME PAGE</h1>
     <p id="pagehome">THE PAGE FOR THE HOME</p>
-    <div class="double-line-blog"></div>
-  </section>
-  <div id="second-header">
+      </section>
+  <div id="second-header" class="headerWidth">
     <div class="double-line-blog"></div>
     <div id="tagline" class="centered">
       <p>TAKE A LOOK AT THIS AMAZING <strong> HOME PAGE!</strong></p>
@@ -40,11 +38,11 @@
       </div>
     </div>
     <div id="tell-button" class='centered'>
-      <button id="tell-me" class="redButton">TELL ME MORE</button>
+      <button id="tell-me" class="redButton" onClick="alert('This function is not currently available.')">TELL ME MORE</button>
     </div>
   </div>
-  <div id="blank-side-left"></div>
-  <div id="blank-side-right"></div>
+  <div id="blank-side-left" class="adSpace">BUY THIS SPACE</div>
+  <div id="blank-side-right" class="adSpace">LUCRO ERGO SUM</div>
   <div id='banner'>
     <banner class="banner centered">
       <p class="quote">[ <em> One's real life is so often the life that one does not lead. </em> - Oscar Wilde ]</p>
@@ -52,7 +50,7 @@
   </div>
   <section id="main">
     <div id="first-article">
-      <p class="title">LATERITIAM INVENIT...</p>
+      <p class="titleLarge">LATERITIAM INVENIT...</p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Azerbajiani_landscape_-_Another_version.jpg"
         title='another picture' atl='another picture' />
 
@@ -77,7 +75,7 @@
     </div>
 
     <div id="second-article">
-      <p class="title">...MARMOREAM RELIQUIT</p>
+      <p class="titleLarge">...MARMOREAM RELIQUIT</p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/ET_Afar_asv2018-01_img48_Dallol.jpg"
         title='yet another picture' atl='yet another picture' />
 
@@ -103,7 +101,7 @@
   <section id="sidebar">
     <div class="side-text">
       <button class="date" onClick="location.href='blog-post.html'">JULY 30</button>
-      <p class="title">DEFINITION OF</p>
+      <p class="titleSmall">DEFINITION OF</p>
       <P id="small-text-1" class="text">Anacoluthon is derived from the Greek word anakolouthos, which means “lacking
         sequence.” It is a stylistic device defined as a syntactic deviation, and interruption within a sentence from
         one structure to another.</P>
@@ -111,19 +109,19 @@
     </div>
     <div class="side-text">
       <button class="date" onClick="location.href='blog-post.html'">JULY 28</button>
-      <p class="title">ANACOLUTHON</p>
+      <p class="titleSmall">ANACOLUTHON</p>
       <P id="small-text-2" class="text">In this interruption, the expected sequence of grammar is absent. The
         grammatical flow of sentences is interrupted in order to begin more sentences.</P>
       <div class="special-line-single"></div>
     </div>
     <div class="side-text">
       <button class="date" onClick="location.href='blog-post.html'">JULY 26</button>
-      <p class="title">NIFTY, EH?</p>
+      <p class="titleSmall">NIFTY, EH?</p>
       <P id="small-text-3" class="text">It is employed intentionally, unintentionally, or as a rhetorical device.</P>
       <div class="special-line-double"></div>
     </div>
     <div class="side-text">
-      <p class="title">MORE ON...</p>
+      <p class="titleSmall">MORE ON...</p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/64_365_Color_Macro_%285498808099%29.jpg"
         id="smallish-picture" class="wrap" alt="smallish picture" />
       <p id="small-text-4" class="text">In rhetoric, anacoluthon is also known as a figure of disorder in which the
@@ -131,12 +129,12 @@
         hyperbaton, which also involves a change in the normal position of words, phrases, and sentences.
       </p>
       <div>
-        <button id="learn more" class="redButton" onClick="location.href='learn-more.html'">LEARN MORE</button>
+        <button class="redButton learn-more" onClick="location.href='learn-more.html'">LEARN MORE</button>
       </div>
       <div class="special-line-single"></div>
     </div>
     <div class="side-text">
-      <p class="title">ANACOLUTHA (PL)</p>
+      <p class="titleSmall">ANACOLUTHA (PL)</p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/16777216colors.png" id="not-large-picture"
         class="wrap" alt="not large picture" />
       <p id="small-text-4" class="text">Anacoluthon is the interruption within a sentence from one construction to
@@ -144,7 +142,7 @@
         form of tense.
       </p>
       <div>
-        <button id="learn more" class="redButton" onClick="location.href='learn-more.html'">LEARN MORE</button>
+        <button class="redButton learn-more" onClick="location.href='learn-more.html'">LEARN MORE</button>
       </div>
     </div>
   </section>
@@ -160,7 +158,7 @@
         <div class="formRowTwo">
           <textarea name="feedback" id="feedback" placeholder="Message"></textarea>
         </div>
-        <button class="redButton"><i class="far fa-file-alt"></i> Submit</button>
+        <button class="redButton" onClick="alert('Thanks for your submission!')"><i class="far fa-file-alt" ></i> Submit</button>
       </div>
       <div class="item footerInfo darkerGray">
         <p>I'm baby selfies actually godard disrupt af cloud bread skateboard swag vice.
@@ -189,7 +187,7 @@
       </div>
     </div>
   </section>
-  <script src="https://kit.fontawesome.com/6e9a3147d8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6e9a3147d8.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

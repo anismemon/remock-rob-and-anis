@@ -9,9 +9,9 @@
 
 </head>
 
-<body style='grid-template-rows: 2fr 1fr 0fr auto 4fr; grid-template-areas:
+<body style='grid-template-rows: auto auto 0fr auto auto; grid-template-columns: 1fr 1fr 2fr 1fr 1fr; grid-template-areas:
 "header     header      header      header      header"
-"second-header   second-header second-header     second-header     second-header"    
+".   second-header second-header     second-header     ."    
 "banner     banner      banner      banner      banner"
 "blankleft  sidebar     main        main            blankright"    
 "footer     footer      footer      footer      footer"'>
@@ -27,7 +27,7 @@
     <div id="blank-side-right"></div>
 
     <section id="main">
-        <div id="first-article">
+        <div id="first-article-learn">
             <p class="titleLarge">WELCOME TO THE <strong>BLOG POST PAGE LAYOUT</strong></p>
             <img src="https://blog.artsper.com/wp-content/uploads/2017/03/original.47640.png" title='another picture'
                 atl='another picture' />
@@ -123,7 +123,7 @@
                 hyperbaton, which also involves a change in the normal position of words, phrases, and sentences.
             </p>
             <div>
-                <button id="learn more" class="redButton" onClick="location.href='learn-more.html'">LEARN MORE</button>
+                <button class="redButton learn-more" onClick="location.href='learn-more.html'">LEARN MORE</button>
             </div>
             <div class="special-line-single"></div>
         </div>
@@ -137,7 +137,7 @@
                 form of tense.
             </p>
             <div>
-                <button id="learn more" class="redButton" onClick="location.href='learn-more.html'">LEARN MORE</button>
+                <button class="redButton learn-more" onClick="location.href='learn-more.html'">LEARN MORE</button>
             </div>
         </div>
     </section>
@@ -154,7 +154,7 @@
                 <div class="formRowTwo">
                     <textarea name="feedback" id="feedback" placeholder="Message"></textarea>
                 </div>
-                <button class="redButton"><i class="far fa-file-alt"></i> Submit</button>
+                <button class="redButton" onClick="alert('Thanks for your submission!')"><i class="far fa-file-alt"></i> Submit</button>
             </div>
             <div class="item footerInfo darkerGray">
                 <p>I'm baby selfies actually godard disrupt af cloud bread skateboard swag vice.
