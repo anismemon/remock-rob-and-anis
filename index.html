@@ -5,14 +5,14 @@
   <title>Mockup Home</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="main.css" />  
+  <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
   <section id="header" class='centered2 centered'>
     <h1 id="homepage" class='title'>HOME PAGE</h1>
     <p id="pagehome">THE PAGE FOR THE HOME</p>
-      </section>
+  </section>
   <div id="second-header" class="headerWidth">
     <div class="double-line-blog"></div>
     <div id="tagline" class="centered">
@@ -38,11 +38,21 @@
       </div>
     </div>
     <div id="tell-button" class='centered'>
-      <button id="tell-me" class="redButton" onClick="alert('This function is not currently available.')">TELL ME MORE</button>
+      <button id="tell-me" class="redButton" onClick="alert('This function is not currently available.')">TELL ME
+        MORE</button>
     </div>
   </div>
-  <div id="blank-side-left" class="adSpace">BUY THIS SPACE</div>
-  <div id="blank-side-right" class="adSpace">LUCRO ERGO SUM</div>
+
+  <div id="blank-side-left" class="adSpace">
+    <div id='adContainer1' style='display: none'>
+      <p id="adSpace1" >* BUY THI$ $PACE *</p>
+    </div>
+  </div>
+  <div id="blank-side-right" class="adSpace">
+    <div id='adContainer2' style='display: none'>
+      <p id='adSpace2'>LUCRO ERGO SUM</p>
+    </div>
+  </div>
   <div id='banner'>
     <banner class="banner centered">
       <p class="quote">[ <em> One's real life is so often the life that one does not lead. </em> - Oscar Wilde ]</p>
@@ -68,8 +78,7 @@
         Tempor commodo ullamcorper a lacus vestibulum sed.
       </p>
       <div>
-        <button id="continue" class="redButton" onClick="location.href='continue-reading.html'">CONTINUE
-          READING</button>
+        <button id="continueReading" class="redButton">CONTINUE READING</button>
         <div class="special-line-double"></div>
       </div>
     </div>
@@ -93,7 +102,7 @@
         Tempor commodo ullamcorper a lacus vestibulum sed.
       </p>
       <div>
-        <button id="continue" class="redButton" onClick="location.href='continue-reading.html'">CONTINUE
+        <button id="continueReading2" class="redButton">CONTINUE
           READING</button>
       </div>
     </div>
@@ -158,7 +167,8 @@
         <div class="formRowTwo">
           <textarea name="feedback" id="feedback" placeholder="Message"></textarea>
         </div>
-        <button class="redButton" onClick="alert('Thanks for your submission!')"><i class="far fa-file-alt" ></i> Submit</button>
+        <button class="redButton" onClick="alert('Thanks for your submission!')"><i class="far fa-file-alt"></i>
+          Submit</button>
       </div>
       <div class="item footerInfo darkerGray">
         <p>I'm baby selfies actually godard disrupt af cloud bread skateboard swag vice.
@@ -187,7 +197,8 @@
       </div>
     </div>
   </section>
-    <script src="https://kit.fontawesome.com/6e9a3147d8.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/6e9a3147d8.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
